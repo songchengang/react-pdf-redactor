@@ -1,0 +1,10 @@
+body{background-color: #ccc;}
+.pdfClass{
+  margin-bottom: 10px;
+}
+#pdf-container{
+  width: 820px;
+  max-height: 600px;
+  overflow: auto;
+  margin: 0 auto;
+}

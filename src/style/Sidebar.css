@@ -1,0 +1,60 @@
+
+.doorHanger,
+.doorHangerRight {
+  border-radius: 2px;
+  box-shadow: 0 1px 5px var(--doorhanger-border-color),
+    0 0 0 1px var(--doorhanger-border-color);
+  border: var(--doorhanger-border-color-whcm);
+}
+.doorHanger:after,
+.doorHanger:before,
+.doorHangerRight:after,
+.doorHangerRight:before {
+  bottom: 100%;
+  border: solid rgba(0, 0, 0, 0);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  opacity: var(--doorhanger-triangle-opacity-whcm);
+}
+.doorHanger:after,
+.doorHangerRight:after {
+  border-width: 8px;
+}
+.doorHanger:after {
+  border-bottom-color: var(--toolbar-bg-color);
+}
+.doorHangerRight:after {
+  border-bottom-color: var(--doorhanger-bg-color);
+}
+.doorHanger:before,
+.doorHangerRight:before {
+  border-bottom-color: var(--doorhanger-border-color);
+  border-width: 9px;
+}
+
+html[dir="ltr"] .doorHanger:after,
+html[dir="rtl"] .doorHangerRight:after {
+  left: 10px;
+  margin-left: -8px;
+}
+
+html[dir="ltr"] .doorHanger:before,
+html[dir="rtl"] .doorHangerRight:before {
+  left: 10px;
+  margin-left: -9px;
+}
+
+html[dir="rtl"] .doorHanger:after,
+html[dir="ltr"] .doorHangerRight:after {
+  right: 10px;
+  margin-right: -8px;
+}
+
+html[dir="rtl"] .doorHanger:before,
+html[dir="ltr"] .doorHangerRight:before {
+  right: 10px;
+  margin-right: -9px;
+}
